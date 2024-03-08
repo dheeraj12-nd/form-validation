@@ -1,10 +1,46 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Form</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <script src="./formvalidation.js"></script>
+    </head>
+<body>
 <div class="form">
-    <form name="myform" method="post" action="google.com" onsubmit="return formValidation()" >  
-        <label>
-            <input type="text" name="name" placeholder="Enter your name">
-        </label>
-        <input type="submit" value="register">  
+    <h2>Contact form</h2>
+    <form name="myform" action="#" onsubmit="return formValidation()" method="post">
+        <div class="row">
+            <div class="col-12">
+                <label for="firstname">
+                    <input type="text" id="firstname" name="firstname" placeholder="firstname">
+                </label>
+            </div>
+            <div class="col-12">
+                <label for="lastname">
+                    <input type="text" id="lastname" name="lastname" placeholder="lastname">
+                </label>
+            </div>
+            <div class="col-12">
+                <label for="email">
+                    <input type="email" id="email" name="email"  placeholder="email">
+                </label>
+            </div>
+            <div class="col-12">
+                <label for="phone">
+                    <input type="tel" id="phone" name="phone"  placeholder="phone">
+                </label>
+            </div>
+            <div class="col-12">
+                <label for="message">
+                    <textarea id="message" name="message" rows="4" placeholder="message"></textarea>
+                </label>
+            </div>
+            <div class="col-12">
+                <button type="submit" value="submit">Submit</button>
+            </div>
+        </div>
     </form>
 </div>
-
-<script src="./formvalidation.js"></script>
+</body>
+</html>
